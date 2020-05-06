@@ -8,15 +8,19 @@ class PersonCard extends Component{
         };
     }
 
-    
+    addAge  = () => {
+                this.setState({bdage: this.state.bdage + 1});
+            }
+        
 
     render() {
         const { firstName, lastName, age, hairColor } = this.props;
         return(
             <div>
-                <h1>{this.props.lastName}, {this.props.firstName}</h1>
-                <h3>Age: {this.props.age}</h3>
-                <h3>Hair Color: {this.props.hairColor}</h3>
+                <h1> {lastName}, {firstName}</h1>
+                <h3>Age: {this.state.bdage}</h3>
+                <h3>Hair Color: {hairColor}</h3>
+                <button onClick={this.addAge}>Birthday Button for {firstName} {lastName}</button>
             </div>
         );
     }
