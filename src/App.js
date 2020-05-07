@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+// this will import the PersonCard from compnents
 import PersonCard from './components/PersonCard';
 
 function App() {

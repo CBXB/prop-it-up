@@ -25,5 +25,5 @@ class PersonCard extends Component{
         );
     }
 }
-
+// this expert the class to the App.js file
 export default PersonCard;
